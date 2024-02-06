@@ -1,51 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electric Juan</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="banner-container">
-        <h2>💡 Call Electric Juan at 619-438-9646 to schedule a consultation. 💡</h2>
+      <h2>
+        💡 Call Electric Juan at 619-438-9646 to schedule a consultation. 💡
+      </h2>
     </div>
 
-    <!-- <header class="header">
-        <a href="home.html" class="logo">Electric Juan</a>
+    <nav class="contact-nav">
+      <a href="home.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
 
-        <nav class="contact-nav">
-            <li><a href="home.html">Home/Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="home.html">Gallery</a></li>
-        </nav>
-    </header> -->
-
-    <nav class="contact-nav"> 
-        <a href="home.html" class="logo">Electric Juan</a>
-
-        <ul>
-            <li><a href="home.html">Home/Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="home.html">Gallery</a></li>
-        </ul>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 384 512" width="24"><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg></a>
+        </li>
+        <li><a href="home.html">Home/Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+      <ul>
+        <li><a href="home.html" class="hideOnMobile">Home/Services</a></li>
+        <li><a href="contact.html" class="hideOnMobile">Contact</a></li>
+        <li><a href="gallery.html" class="hideOnMobile">Gallery</a></li>
+        <li onclick="showSidebar()">
+          <a href="#" class="menu-button" ><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 448 512" weight="24"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></i></a>
+        </li>
+      </ul>
     </nav>
 
-    
-    <footer class="page-footer">
-        <div class="footer-container">
-            <div class="social">
-                <a class="social-icon" href="http://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                <a class="social-icon" href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                <a class="social-icon" href="https://www.yelp.com/"><i class="fa-brands fa-yelp"></i></a>
-           </div>
-           <div class="copyRight">
-                <span>Copyright &copy; 2024 Electric Juan</span>
-           </div>
+    <section class="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <h3>Send a message</h3>
+            <form>
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" />
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" />
+              </div>
+              <div class="form-group">
+                <textarea name="message" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" onclick="sendEmail()">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><i class="fa-solid fa-phone"></i> (619) 588-7421</p>
+            <p><i class="fa-solid fa-envelope"></i> electricJuan@gmail.com</p>
+            <p>
+              <i class="fa-solid fa-map"></i> 4445 5th Avenue, San Diego,
+              California
+            </p>
+          </div>
         </div>
-</body>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="footer-container">
+        <div class="social">
+          <a class="social-icon" href="http://instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="social-icon" href="http://facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a class="social-icon" href="https://www.yelp.com/"
+            ><i class="fa-brands fa-yelp"></i
+          ></a>
+        </div>
+        <div class="copyRight">
+          <span>Copyright &copy; 2024 Electric Juan</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
