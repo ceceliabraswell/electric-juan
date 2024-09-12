@@ -430,10 +430,6 @@ textarea:focus {
     width: 100%;
     margin-bottom: 24px;
   }
-
-  .navbar ul {
-    display: block;
-  }
 }
 
 @media (max-width: 800px) {
@@ -443,6 +439,15 @@ textarea:focus {
 
   .menu-button {
     display: block;
+  }
+
+  .navbar ul {
+    display: block;
+  }
+
+  .overlay {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
