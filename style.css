@@ -14,7 +14,7 @@ html {
   background-color: #eaa22b;
   color: #000;
   text-align: center;
-  padding: 4px 24px;
+  padding: .625rem 1.5rem;
 }
 
 /* navbar */
@@ -30,13 +30,13 @@ html {
 }
 
 .navbar li {
-  margin: 10px;
-  padding: 10px;
+  margin: .625rem;
+  padding: .625rem;
 }
 
 .navbar li a {
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -430,6 +430,10 @@ textarea:focus {
     width: 100%;
     margin-bottom: 24px;
   }
+
+  .navbar ul {
+    display: block;
+  }
 }
 
 @media (max-width: 800px) {
@@ -447,3 +451,4 @@ textarea:focus {
     width: 100%;
   }
 }
+
