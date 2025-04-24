@@ -21,6 +21,9 @@ html {
 
 .navbar {
   text-align: center;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  position: relative;
 }
 
 .navbar ul {
@@ -42,6 +45,18 @@ html {
 
 .navbar li a:hover {
   color: goldenrod;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
 }
 
 .sidebar {
@@ -468,6 +483,29 @@ button.next { right: 10px; }
     padding: 20px;
   } */
 
+  .hamburger {
+    display: block;
+  }
+
+  .home-responsive {
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .home-responsive.show {
+    display: flex;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    width: 100%;
+  }
+
   .contact-banner {
     padding: 40px 20px;
   }
@@ -506,9 +544,9 @@ button.next { right: 10px; }
     display: block;
   }
 
-  .navbar ul {
+  /* .navbar ul {
     display: block;
-  }
+  } */
 
   .overlay {
     padding-left: 20px;

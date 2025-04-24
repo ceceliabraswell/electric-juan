@@ -1,18 +1,18 @@
-function showSidebar() {
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "flex";
+// function showSidebar() {
+//   const sidebar = document.querySelector(".sidebar");
+//   sidebar.style.display = "flex";
 
-  const homeResponsive = document.querySelector(".homeResponsive");
-  homeResponsive.style.display = "flex";
-}
+//   const homeResponsive = document.querySelector(".homeResponsive");
+//   homeResponsive.style.display = "flex";
+// }
 
-function hideSidebar() {
-  const hideSidebar = document.querySelector(".sidebar");
-  hideSidebar.style.display = "none";
+// function hideSidebar() {
+//   const hideSidebar = document.querySelector(".sidebar");
+//   hideSidebar.style.display = "none";
 
-  const homeResponsive = document.querySelector(".homeResponsive");
-  homeResponsive.style.display = "none";
-}
+//   const homeResponsive = document.querySelector(".homeResponsive");
+//   homeResponsive.style.display = "none";
+// }
 
 function sendEmail() {
   alert("Email sent!");
@@ -109,4 +109,11 @@ function handleSwipeGesture() {
     if (swipeDistance < 0) nextSlide();
     else prevSlide();
   }
+}
+
+// responsive navigation
+
+function toggleMenu() {
+  const menu = document.querySelector('.home-responsive');
+  menu.classList.toggle('show');
 }
