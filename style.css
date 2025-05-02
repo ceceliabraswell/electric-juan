@@ -27,12 +27,7 @@ li {
 
 /* navbar */
 .navbar {
-  display: flex;
-  /* justify-content: center; */
-  justify-content: center;
-  align-items: center;
-  padding: 15px 30px;
-  position: relative;
+  padding: 15px 20px;
 }
 
 .nav-menu {
