@@ -71,7 +71,6 @@ li {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  gap: 5px;
 }
 
 .bar {
@@ -398,7 +397,7 @@ button.next { right: 10px; }
     top: 100%;
     left: 0;
     width: 100%;
-    display: none;
+    /* display: none; */
     padding: 20px 0;
   }
 
