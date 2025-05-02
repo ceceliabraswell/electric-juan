@@ -392,6 +392,29 @@ button.next { right: 10px; }
 
 @media screen and (max-width: 768px) {
 
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-logo {
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
   .contact-banner {
     padding: 40px 20px;
   }
