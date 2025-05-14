@@ -92,7 +92,7 @@ nav {
   color: #fff;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
 
   text-align: center;
@@ -100,30 +100,14 @@ nav {
   position: absolute;
 }
 
+.services-section {
+  background-color: #eaa22b;
+  padding: 70px 0;
+}
+
 .bold {
   font-size: 26px;
   font-weight: 600;
-}
-
-.contact-banner {
-  text-align: center;
-  background-color: #eaa22b;
-  padding-bottom: 70px;
-  padding-top: 70px;
-}
-
-.contact-banner h2 {
-  padding-bottom: 45px;
-}
-
-.contact-btn {
-  font-size: 24px;
-  font-weight: 500;
-  background-color: blue;
-  cursor: pointer;
-  border-radius: 50%;
-  padding: 15px 30px;
-  color: #fff;
 }
 
 .services-container {
@@ -138,7 +122,6 @@ nav {
 }
 
 .services-header {
-  color: red;
   font-size: 35px;
   text-align: center;
 }
@@ -156,6 +139,11 @@ nav {
   height: 100%;
 
   padding-bottom: 12px;
+}
+
+.services p {
+  text-align: center;
+  line-height: 1.8;
 }
 
 /* contact page */
