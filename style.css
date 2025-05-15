@@ -1,6 +1,8 @@
 :root {
-  --white: #fff;
+  --black: #000;
+  --charcoal: #333;
   --gold: #eaa22b;
+  --white: #fff;
 }
 
 * {
@@ -94,7 +96,7 @@ nav {
 .overlay {
   width: 100%;
   height: 100%;
-  color: #fff;
+  color: var(--white);
   display: flex;
   justify-content: center;
   /* flex-direction: column; */
@@ -106,7 +108,7 @@ nav {
 }
 
 .services-section {
-  background-color: #eaa22b;
+  background-color: var(--gold);
   padding: 70px 0;
 }
 
@@ -183,11 +185,11 @@ nav {
   text-transform: uppercase;
   padding: 0 30px;
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
 }
 
 .contact-nav li a:hover {
-  color: goldenrod;
+  color: var(--gold);
   transition: all 0.4s eas 0s;
 }
 
@@ -203,14 +205,14 @@ nav {
 .contact-container {
   max-width: 800px;
   margin: 0 auto;
-  background: #fff;
+  background: var(--white);
   padding: 50px;
 }
 
 .contact-container h2 {
   font-size: 36px;
   margin-bottom: 40px;
-  color: #333;
+  color: var(--charcoal);
 }
 
 .contact-wrapper {
@@ -227,7 +229,7 @@ nav {
 .contact-form h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--charcoal);
 }
 
 .form-group {
@@ -241,7 +243,7 @@ textarea {
   border-radius: 8px;
   border: none;
   background-color: #7576774b;
-  color: #333;
+  color: var(--charcoal);
 }
 
 input:focus,
@@ -253,9 +255,9 @@ textarea:focus {
 .email-btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: goldenrod;
+  background-color: var(--gold);
   font-size: 18px;
-  color: #fff;
+  color: var(--white);
   border: none;
   cursor: pointer;
   transition: 0.3s ease;
@@ -272,16 +274,16 @@ textarea:focus {
 .contact-info h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--charcoal);
 }
 
 .contact-info {
   margin-bottom: 10px;
-  color: #555;
+  color: var(--charcoal);
 }
 
 .contact-info i {
-  color: goldenrod;
+  color: var(--gold);
   margin-right: 10px;
 }
 
@@ -311,6 +313,7 @@ textarea:focus {
 }
 
 .gallery-title {
+  color: var(--black);
   font-size: 2rem;
   margin-bottom: 20px;
   font-weight: 600;
@@ -394,7 +397,7 @@ textarea:focus {
 /* footer */
 
 .page-footer {
-  background-color: #000;
+  background-color: var(--black);
   padding: 20px 0 0 0;
 }
 
@@ -407,11 +410,11 @@ textarea:focus {
   max-width: 1200px;
   margin: 0 auto;
   padding: 24px;
-  color: #fff;
+  color: var(--white);
 }
 
 .social-icon {
-  color: #fff;
+  color: var(--white);
   padding: 20px;
   font-size: 30px;
   width: 50px;

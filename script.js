@@ -3,6 +3,9 @@ function sendEmail() {
   document.getElementById("reset").reset();
 }
 
+// gallery script
+
+
 
 
 // old gallery script
