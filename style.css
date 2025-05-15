@@ -410,11 +410,11 @@ textarea:focus {
   max-width: 1200px;
   margin: 0 auto;
   padding: 24px;
-  color: var(--white);
+  color: var(--gold);
 }
 
 .social-icon {
-  color: var(--white);
+  color: var(--gold);
   padding: 20px;
   font-size: 30px;
   width: 50px;
