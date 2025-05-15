@@ -1,5 +1,6 @@
 :root {
   --white: #fff;
+  --gold: #eaa22b;
 }
 
 * {
@@ -19,7 +20,7 @@ li {
 }
 
 .banner-container {
-  background-color: #eaa22b;
+  background-color: var(--gold);
   color: #000;
   text-align: center;
   padding: .625rem 1.5rem;
@@ -51,7 +52,7 @@ nav {
 
 .nav-links a {
   color: var(--white);
-  font-size: 18px;
+  font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
   padding: 8px 16px;
@@ -59,7 +60,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: goldenrod;
+  color: var(--gold);
 }
 
 .nav-logo img {
@@ -69,6 +70,10 @@ nav {
 
 .nav-bar {
   display: none;
+}
+
+.nav-menu-button {
+  font-size: 2rem;
 }
 
 /* home page */
@@ -286,53 +291,7 @@ textarea:focus {
 
 /* gallery section */
 
-.gallery-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 60vh;
-  background-color: beige;
-}
 
-.gallery-container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  flex: 0 0 25%;
-  max-width: 25%;
-  height: auto;
-  object-fit: cover;
-  padding: 5px;
-}
-
-.slide.active {
-  display: block;
-}
-
-button.prev, button.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  padding: 10px;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-button.prev { left: 10px; }
-button.next { right: 10px; }
 
 /* footer */
 
@@ -433,4 +392,53 @@ button.next { right: 10px; }
 
 
 
+/* old gallery code */
+
+/* .gallery-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background-color: beige;
+}
+
+.gallery-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 25%;
+  max-width: 25%;
+  height: auto;
+  object-fit: cover;
+  padding: 5px;
+}
+
+.slide.active {
+  display: block;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; } */
 
